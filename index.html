@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hello World in HTML</title>
+
+    <meta name="color-scheme" content="light dark">
+
+    <style>
+        :root {
+            --bg1: #15171b;
+            --bg2: #282a36;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: "Helvetica Neue", Arial;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(1200px 600px at 10% 20%, rgba(99, 102, 241, 0.12), transparent 6%),
+                radial-gradient(900px 500px at 90% 80%, rgba(6, 182, 212, 0.07), transparent 7%),
+                linear-gradient(180deg, var(--bg1), var(--bg2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 90px;
+            text-align: center;
+        }
+
+        @-webkit-keyframes animatedGradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        @keyframes animatedGradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        .gradient-text {
+            animation: animatedGradient 4s ease infinite alternate;
+            -webkit-animation: animatedGradient 4s ease infinite alternate;
+            background-color: #f3ec78;
+            background-image: linear-gradient(135deg, #80ffea, #50fa7b, #ffb86c, #ff80bf, #9580ff, #ff9580, #ffff80);
+            background-size: 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <h1 class="gradient-text">Hello World</h1>
+        </section>
+
+    </main>
+</body>
+
+</html>
